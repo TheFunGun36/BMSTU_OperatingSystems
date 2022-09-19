@@ -6,7 +6,7 @@
 020A:074C  52					push	dx
 020A:074D  B8 0040				mov	ax,40h
 020A:0750  8E D8				mov	ds,ax
-020A:0752  33 C0				xor	ax,ax			; Zero register
+020A:0752  33 C0				xor	ax,ax
 020A:0754  8E C0				mov	es,ax
 020A:0756  FF 06 006C				inc	word ptr ds:[6Ch]	; (0040:006C=6707h)
 020A:075A  75 04				jnz	loc_1			; Jump if not zero
